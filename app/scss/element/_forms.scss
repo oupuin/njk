@@ -1,0 +1,52 @@
+/*----------------------------------------*/
+/*  14. Blog Details
+/*----------------------------------------*/
+.mfx.form {
+  color: white;
+  border-color: $theme-primary;
+  border-width: 1px;
+  border-style: solid;
+  padding: 30px;
+  border-radius: 5px;
+
+  textarea::placeholder,
+  input::placeholder {
+    color: darkgrey;
+  }
+
+  textarea,
+  input {
+    color: black;
+    font-weight: 700;
+  }
+
+  .focused,
+  input:focus + label {
+    margin-top: -15px;
+    font-size: 11px;
+    opacity: 0.5;
+  }
+
+  label,
+  h5 {
+    font-weight: 700;
+  }
+
+  h5 {
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+
+  &.bg-color input[type='submit'],
+  &.bg-color h5,
+  &.bg-color label {
+    color: white;
+  }
+
+  &.bg-color textarea,
+  &.bg-color input[type='email'],
+  &.bg-color input[type='text'],
+  &.bg-color {
+    background-color: #18262f;
+  }
+}

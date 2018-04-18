@@ -1,0 +1,9 @@
+choco install nodejs
+choco install ruby
+gem install sass
+nodejs -v
+npm -v
+sass -v
+
+npm install gulp -g
+npm install browser-sync -g

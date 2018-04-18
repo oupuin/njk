@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "./app/templates/partials/_header.njk" %}
+
+<body>
+    <!-- Main Wrapper Start -->
+    <div class="main-wrapper">
+        {% include "./app/templates/partials/_menu.njk" %} 
+        {% block content %} {% endblock %} 
+        {% include "./app/templates/partials/_end.njk"%}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include "./app/templates/partials/head.html" %}
+
+<body>
+
+    {% block content %}
+    <!-- Main Wrapper Start -->
+    <div class="main-wrapper">
+
+        <!-- Header Section Start -->
+        <div class="ht-header-section section">
+
+            <!-- Header Bottom Two Start -->
+            <div class="ht-header-bottom ht-header-bottom-three ht-header-bottom-fullwidth ht-header-menu-center ht-header-sticky">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col offset-xl-1 offset-md-0">
+                            <a href="index.html" class="ht-logo">
+                                <img src="./images/svg/mfx-horiz-dark.svg" alt="Logo">
+                                <img class="ht-sticky-logo" src="./images/svg/mfx-horiz-light.svg" alt="Logo">
+                            </a>
+                        </div>
+                        {% include "./app/templates/partials/menu.html" %}
+
+
+                        <div class="col">
+                            <div class="ht-header-form .ht-header-search-form white mr-30">
+                                <form id="demo-2">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div class="ht-mobile-menu ht-mobile-menu-three d-block d-lg-none col"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Header Bottom One End -->
+
+        </div>
+        <!-- Header Section End -->
+
+        <!-- Hero Section Start -->
+        <div class="ht-hero-section section">
+        
+            <!-- Hero One Slider Start -->
+            <div class="ht-hero-slider mflex-slider">
+        
+                <!-- Single Slide Start -->
+                <div class="ht-single-slide mflex-slide normal" style="background-image: url(./video/20860871.mp4)">
+        
+                    <!-- Hero Content One Start -->
+                    <div class="ht-hero-content-four container slide">
+        
+                        <h1 class="cssanimation leDoorCloseLeft sequence">Simplify Your Lending</h1>
+                        <p>MortgageFlexONE Origination uses the same database for Consumer and Mortgage loans - giving you immediate
+                            access to existing borrower information, when you need it.</p>
+        
+                    </div>
+                    <!-- Hero Content One End -->
+                    <video id="introvid" src="./video/20860871.mp4" loop autoplay></video>
+                </div>
+                <!-- Single Slide End -->
+        
+            </div>
+            <!-- Hero One Slider End -->
+        
+            <a href="#section-01" class="btn btn-lg hover-solid circle blue uppercase bot-scroll">
+                <span>
+                    <i class="fa fa-chevron-down"></i>
+                </span>
+            </a>
+        </div>
+        <!-- Hero Section End -->
+        
+
+        {% include "./app/templates/partials/end.html" %} {% endblock %}
+</body>
+
+</html>

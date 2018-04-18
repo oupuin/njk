@@ -1,0 +1,424 @@
+<!-- index.nunjucks -->
+{% extends "./templates/default.html" %}
+
+    {% block content %}
+
+    <!-- Main Wrapper Start -->
+    <div class="main-wrapper">
+
+        <!-- Header Section Start -->
+        <div class="ht-header-section section">
+
+            <!-- Header Bottom Two Start -->
+            <div class="ht-header-bottom ht-header-bottom-three ht-header-bottom-fullwidth ht-header-menu-center ht-header-sticky">
+                <div class="container-fluid">
+                    <div class="row">
+
+                        <div class="col offset-xl-1 offset-md-0">
+                            <a href="index.html" class="ht-logo">
+                                <img src="./images/svg/mfx-horiz-dark.svg" alt="Logo">
+                                <img class="ht-sticky-logo" src="./images/svg/mfx-horiz-light.svg" alt="Logo">
+                            </a>
+                        </div>
+                    
+                        <!-- Main Menu One Start -->
+                        <div class="col ">
+                            <div class="ht-main-menu ht-main-menu-three ht-menu-white ht-sub-menu-white">
+                                {% include "./templates/partials/menu.html" %}
+                            </div>
+                        </div>
+
+
+                        <div class="col">
+                            <div class="ht-header-form .ht-header-search-form white mr-30">
+                                <form id="demo-2">
+                                    <input type="search" placeholder="Search">
+                                </form>
+                            </div>
+
+                        </div>
+
+                        <div class="ht-mobile-menu ht-mobile-menu-three d-block d-lg-none col"></div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Header Bottom One End -->
+
+        </div>
+        <!-- Header Section End -->
+
+        <!-- Hero Section Start -->
+        <div class="ht-hero-section section">
+
+            <!-- Hero One Slider Start -->
+            <div class="ht-hero-slider mflex-slider">
+
+                <!-- Single Slide Start -->
+                <div class="ht-single-slide mflex-slide normal" style="background-image: url(./video/20860871.mp4)">
+
+                    <!-- Hero Content One Start -->
+                    <div class="ht-hero-content-four container slide">
+
+                        <h1 class="cssanimation leDoorCloseLeft sequence">Simplify Your Lending</h1>
+                        <p>MortgageFlexONE Origination uses the same database for Consumer and Mortgage loans - giving you immediate access to existing
+                        borrower information, when you need it.</p>
+                        
+                    </div>
+                    <!-- Hero Content One End -->
+                    <video id="introvid" src="./video/20860871.mp4" loop autoplay ></video>
+                </div>
+                <!-- Single Slide End -->
+                
+            </div>
+            <!-- Hero One Slider End -->
+            
+            <a href="#section-01" class="btn btn-lg hover-solid circle blue uppercase bot-scroll">
+                <span><i class="fa fa-chevron-down"></i></span>
+            </a>
+        </div>
+        <!-- Hero Section End -->
+
+        
+        <!-- Theme Feature Section Start -->
+        <div id="section-01" class="ht-theme-feature-section section pt-120 pb-60">
+            <div class="container">
+                <div class="row align-items-center">
+        
+                    <div class="ht-theme-feature-image text-center col-md-6 col-12 mb-30">
+                        <img src="images/busi-theme-feature-1.png" alt="Feature">
+                    </div>
+        
+                    <div class="ht-theme-feature-content col-md-6 col-12 mb-30">
+                        <h1>MortgageFlexONE</h1>
+                        <p>MortgageFlexONE is an enterprise-level loan origination system that offers the functionality you need regardless of the size of your business</p>
+                        <a href="mfxone.html" class="btn btn-border hover-solid uppercase circle">
+                            <span>Find Out More</span>
+                        </a>
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- Theme Feature Section End -->
+
+        <!-- Theme Feature Section Start -->
+        <div class="ht-theme-feature-section section pt-120 pb-90">
+            <div class="container">
+                <div class="row align-items-center">
+        
+                    <div class="ht-theme-feature-content col-md-6 col-12 mb-30">
+                        <h1>Our Services</h1>
+                        <p>We are here to help your loan process run as smoothly as possible.  Our experienced staff ensures that you succeed while providing a safe and secure system.x</p>
+                        <a href="services.html" class="btn btn-border hover-solid uppercase circle">
+                            <span>Need Help?</span>
+                        </a>
+                    </div>
+
+                    <div class="ht-theme-feature-image text-center col-md-6 col-12 mb-30">
+                        <img src="images/busi-theme-feature-1.png" alt="Feature">
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- Theme Feature Section End -->
+
+
+        <!-- CTA Section Start -->
+        <div class="ht-cta-section section pt-120 pb-120" data-overlay="cyan-blue" data-opacity="8" style="background-image: url(./images/bg/busi-cta.jpg)">
+            <div class="container">
+                <div class="row">
+        
+                    <!-- CTA Content Start -->
+                    <div class="ht-cta-content text-white text-center col-12">
+        
+                        <h1>Wanna Talk To Us?</h1>
+        
+                        <p>We're here to help you. Every step of the way.</p>
+        
+                        <a href="contact.html" class="btn circle hover-solid blue uppercase">
+                            <span>contact us</span>
+                        </a>
+        
+                    </div>
+                    <!-- CTA Content End -->
+        
+                </div>
+            </div>
+        </div>
+        <!-- CTA Section End -->
+
+        <!-- Testimonial Section Start -->
+        <div class="ht-testimonial-section section pt-120 pb-80">
+            <div class="container">
+                <div class="row">
+        
+                    <!-- Section Title Two Start -->
+                    <div class="ht-section-title-two text-center col-12 mb-20">
+        
+                        <h2>We're Proud of Our Partners</h2>
+        
+                    </div>
+                    <!-- Section Title Two End -->
+        
+                    <!-- <div class="col-lg-12 col-md-10 col-12 ml-auto mr-auto">
+        
+                                <div class="ht-testimonial-slider-one">
+        
+                                    <div class="ht-testimonial-one col-lg-4 col-sm-6">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                            alteration in some form, by inumour,domised words which don't look even slightly believable.</p>
+                                        <h3>Harry Weber</h3>
+                                        <h5>CEO, DevItems</h5>
+                                    </div>
+        
+                                    <div class="ht-testimonial-one col-lg-4 col-sm-6">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                                            alteration in some form, by inumour,domised words which don't look even slightly believable.</p>
+                                        <h3>Harry Weber</h3>
+                                        <h5>CEO, DevItems</h5>
+                                    </div>
+        
+                                    <div class="ht-testimonial-one col-lg-4 col-sm-6">
+                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
+                                            by inumour,domised words which don't look even slightly believable.</p>
+                                        <h3>Harry Weber</h3>
+                                        <h5>CEO, DevItems</h5>
+                                    </div>
+        
+                                </div>
+        
+                            </div> -->
+        
+                </div>
+            </div>
+        </div>
+        <!-- Testimonial Section End -->
+
+
+        <!-- Client Section Start -->
+        <div class="ht-client-section section pt-20 pb-80">
+            <div class="container">
+                <div class="row">
+                    <div class="ht-client-one-wrap col d-flex flex-wrap">
+        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/DB_Realty_logo.svg" alt="Client">
+                            
+                        </div>
+        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/pmi-2.svg" alt="Client">
+                            
+                        </div>
+        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/era-real-estate-seeklogo.com.svg" alt="Client">
+                            
+                        </div>
+        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/pmi-2.svg" alt="Client">
+                            
+                        </div>
+        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="http://via.placeholder.com/103x103" alt="Client">
+                            
+                        </div>
+
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/DB_Realty_logo.svg" alt="Client">
+                        
+                        </div>
+                        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/pmi-2.svg" alt="Client">
+                        
+                        </div>
+                        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/era-real-estate-seeklogo.com.svg" alt="Client">
+                        
+                        </div>
+                        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="./images/svg/pmi-2.svg" alt="Client">
+                        
+                        </div>
+                        
+                        <!-- Client -->
+                        <div class="ht-client-image-one mb-30">
+                            <img src="http://via.placeholder.com/103x103" alt="Client">
+                        
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Client Section End -->
+
+        
+        <!-- Blog Section Start -->
+        <div class="ht-blog-section section pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Section Title Three Start -->
+                    <div class="ht-section-title-three text-center col-12 mb-80">
+
+                        <h4>in the know</h4>
+                        <h2>Find out the latest from Mortgage Flex</h2>
+
+                    </div>
+                    <!-- Section Title Three End -->
+
+                    <!-- Blog Three Start -->
+                    <div class="ht-blog-three col-lg-3 col-md-6 col-12 mb-50">
+
+                        <!-- Image -->
+                        <a href="blog-details.html" class="image">
+                            <img src="http://via.placeholder.com/278x210" alt="Blog">
+                        </a>
+
+                        <!-- Content -->
+                        <div class="content">
+
+                            <!-- Meta -->
+                            <div class="meta fix">
+                                <a href="#" class="meta-item author">By Kashem Khan</a>
+                                <span class="meta-item date">June 01, 2017</span>
+                            </div>
+
+                            <!-- Title -->
+                            <h4 class="title">
+                                <a href="blog-details.html">Combined with a han model rome Sentence to be con.</a>
+                            </h4>
+
+                            <!-- Description -->
+                            <div class="desc">
+                                <p>There are many variations of passages of Lorem Ipsum available, but tjorihave salteration
+                                    in some form.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Blog Three End -->
+
+                    <!-- Blog Three Start -->
+                    <div class="ht-blog-three col-lg-3 col-md-6 col-12 mb-50">
+
+                        <!-- Image -->
+                        <a href="blog-details.html" class="image">
+                            <img src="http://via.placeholder.com/278x210" alt="Blog">
+                        </a>
+
+                        <!-- Content -->
+                        <div class="content">
+
+                            <!-- Meta -->
+                            <div class="meta fix">
+                                <a href="#" class="meta-item author">By Kashem Khan</a>
+                                <span class="meta-item date">June 01, 2017</span>
+                            </div>
+
+                            <!-- Title -->
+                            <h4 class="title">
+                                <a href="blog-details.html">Making this the first true generat on the Internet. It uses</a>
+                            </h4>
+
+                            <!-- Description -->
+                            <div class="desc">
+                                <p>There are many variations of passages of Lorem Ipsum available, but tjorihave salteration
+                                    in some form.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Blog Three End -->
+
+                    <!-- Blog Three Start -->
+                    <div class="ht-blog-three col-lg-3 col-md-6 col-12 mb-50">
+
+                        <!-- Image -->
+                        <a href="blog-details.html" class="image">
+                            <img src="http://via.placeholder.com/278x210" alt="Blog">
+                        </a>
+
+                        <!-- Content -->
+                        <div class="content">
+
+                            <!-- Meta -->
+                            <div class="meta fix">
+                                <a href="#" class="meta-item author">By Kashem Khan</a>
+                                <span class="meta-item date">June 01, 2017</span>
+                            </div>
+
+                            <!-- Title -->
+                            <h4 class="title">
+                                <a href="blog-details.html">Cicero are also reproduced in their exact original to.</a>
+                            </h4>
+
+                            <!-- Description -->
+                            <div class="desc">
+                                <p>There are many variations of passages of Lorem Ipsum available, but tjorihave salteration
+                                    in some form.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Blog Three End -->
+
+                    <!-- Blog Three Start -->
+                    <div class="ht-blog-three col-lg-3 col-md-6 col-12 mb-50">
+
+                        <!-- Image -->
+                        <a href="blog-details.html" class="image">
+                            <img src="http://via.placeholder.com/278x210" alt="Blog">
+                        </a>
+
+                        <!-- Content -->
+                        <div class="content">
+
+                            <!-- Meta -->
+                            <div class="meta fix">
+                                <a href="#" class="meta-item author">By Kashem Khan</a>
+                                <span class="meta-item date">June 01, 2017</span>
+                            </div>
+
+                            <!-- Title -->
+                            <h4 class="title">
+                                <a href="blog-details.html">If you are going to use a passage Lorem Ipsum, you need to.</a>
+                            </h4>
+
+                            <!-- Description -->
+                            <div class="desc">
+                                <p>There are many variations of passages of Lorem Ipsum available, but tjorihave salteration
+                                    in some form.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- Blog Three End -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Blog Section End -->
+
+    {% endblock %}

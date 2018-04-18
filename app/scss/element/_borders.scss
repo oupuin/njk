@@ -1,0 +1,31 @@
+/*----------------------------------------*/
+/*  14. Blog Details
+/*----------------------------------------*/
+.bor {
+  border-width: 0;
+
+  /*-- Image --*/
+  &.solid {
+    border-style: solid;
+  }
+
+  &.top {
+    border-top-width: 1px;
+  }
+
+  &.bottom {
+    border-bottom-width: 1px;
+  }
+
+  &.left {
+    border-left-width: 1px;
+  }
+
+  &.right {
+    border-right-width: 1px;
+  }
+
+  &.color {
+    border-color: $theme-primary;
+  }
+}
