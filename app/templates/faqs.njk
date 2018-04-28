@@ -1,0 +1,179 @@
+{% set page_name = "FAQ's" %}
+
+{% extends "./app/templates/_layout.njk" %}
+
+{% import "app/templates/partials/_section-hero.njk" as hero %}
+{% import "app/templates/partials/_section-feature.njk" as feat %}
+{% import "app/templates/partials/_section-cta.njk" as cta %}
+
+    {% block content %}
+
+        {% include "app/templates/partials/_section-header.njk" %}
+
+        <!-- Hero Section Start -->
+        <div class="ht-hero-section section">
+
+            <!-- Hero One Slider Start -->
+            <div class="ht-hero-slider mflex-slider">
+
+                <!-- Single Slide Start -->
+                <div class="ht-single-slide mflex-slide small" style="background-image: url(./video/12211810.mp4)">
+
+                    <!-- Hero Content One Start -->
+                    <div class="ht-hero-content-four container slide">
+
+                        <h1 class="cssanimation flipY sequence">FAQ's</h1>
+                        <p>Get all of your MortgageFlexOne answers here.</p>
+                        
+                    </div>
+                    <!-- Hero Content One End -->
+                    <video id="introvid" src="./video/12211810.mp4" ></video>
+                </div>
+                <!-- Single Slide End -->
+                
+            </div>
+            <!-- Hero One Slider End -->
+            
+            <!-- <a href="#section-01" class="btn btn-lg hover-solid circle blue uppercase bot-scroll">
+                <span><i class="fa fa-chevron-down"></i></span>
+            </a> -->
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- CTA Section Start -->
+        <div class="feature-section section bg-gray pt-90 pb-70 bor bottom solid color">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title text-center col-12 mb-70">
+                        <h2 class="title">About Mortgage Flex</h2>
+                    </div>
+                    
+                    <div class="set col-sm-12">
+                        <div id="q1" class="single-feature col-lg-12 col-md-6 col-12 mb-50">
+                            <span class="icon float-left">
+                                <i class="fa fa-question-circle-o"></i>
+                            </span>
+                            <div class="content fix">
+                                <h4>What is MortgageFlexONE?</h4>
+                                <p>We’re here to help you succeed and our service based approach is second to none.</p>
+                            </div>
+                        </div>
+                        <div id="q2" class="single-feature col-lg-12 col-md-6 col-12 mb-50">
+                            <span class="icon float-left">
+                                <i class="fa fa-question-circle-o"></i>
+                            </span>
+                            <div class="content fix">
+                                <h4>How does it work?</h4>
+                                <p>Our web hosting option is economical, safe and secure. We've been SSAE-16 certified since 2006. We are a Microsoft Gold
+                                Partner and use Microsoft Azure as our cloud provider.</p>
+                            </div>
+                        </div>
+                        <div id="q3" class="single-feature col-lg-12 col-md-6 col-12 mb-50">
+                            <span class="icon float-left">
+                                <i class="fa fa-question-circle-o"></i>
+                            </span>
+                            <div class="content fix">
+                                <h4>Where are your offices?</h4>
+                                <p>MortgageFlex provides implementation services, managed services and web-hosting. Our implementation staff averages over 10
+                                years of mortgage and software industry experience.</p>
+                            </div>
+                        </div>
+                        <div id="q4" class="single-feature col-lg-12 col-md-6 col-12 mb-50">
+                            <span class="icon float-left">
+                                <i class="fa fa-question-circle-o"></i>
+                            </span>
+                            <div class="content fix">
+                                <h4>Can I get consultation?</h4>
+                                <p>MortgageFlex provides implementation services, managed services and web-hosting. Our implementation staff averages
+                                    over 10 years of mortgage and software industry experience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-title text-center col-12 mb-70">
+                        <h2 class="title">Billing</h2>
+                    </div>
+                    
+                    <div class="set col-sm-12">
+                        <div id="q1" class="single-feature col-lg-12 col-md-6 col-12 mb-50">
+                            <span class="icon float-left">
+                                <i class="fa fa-question-circle-o"></i>
+                            </span>
+                            <div class="content fix">
+                                <h4>How does billing work?</h4>
+                                <p>We’re here to help you succeed and our service based approach is second to none.</p>
+                            </div>
+                        </div>
+                        <div id="q2" class="single-feature col-lg-12 col-md-6 col-12 mb-50">
+                            <span class="icon float-left">
+                                <i class="fa fa-question-circle-o"></i>
+                            </span>
+                            <div class="content fix">
+                                <h4>How can I check the status of my bill?</h4>
+                                <p>Our web hosting option is economical,safe and secure. (We've been SSAE-16 certified since 2006.) We are a Microsoft
+                                    Gold Partner and use Microsoft Azure as our cloud provider.</p>
+                            </div>
+                        </div>
+                        <div id="q3" class="single-feature col-lg-12 col-md-6 col-12 mb-50">
+                            <span class="icon float-left">
+                                <i class="fa fa-question-circle-o"></i>
+                            </span>
+                            <div class="content fix">
+                                <h4>Who do I talk to about my bill?</h4>
+                                <p>MortgageFlex provides implementation services, managed services and web-hosting. Our implementation staff averages
+                                    over 10 years of mortgage and software industry experience.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- <div class="col-sm-4 offset-1">
+                        <a class="d-sm-block" href="#q1">Question 1 </a>      
+                        <a class="d-sm-block" href="#q2">Question 2 </a>      
+                        <a class="d-sm-block" href="#q3">Question 3 </a>      
+                        <a class="d-sm-block" href="#q4">Question 4 </a>      
+                        <a class="d-sm-block" href="#q5">Question 5 </a>      
+                        <a class="d-sm-block" href="#q6">Question 6 </a>      
+                        <a class="d-sm-block" href="#q7">Question 7 </a>      
+                        
+                    </div> -->
+                   
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- CTA Section End -->
+      
+
+        <!-- CTA Section Start -->
+        <!-- <div class="ht-cta-section section pt-120 pb-120" data-overlay="cyan-blue" data-opacity="8" style="background-image: url(./images/client/skp.jpg)">
+            <div class="container">
+                <div class="row">
+        
+                    <!-- CTA Content Start 
+                    <div class="ht-cta-content text-white col-7">
+        
+                        <h2 class="title">Case Study - Southern Key</h2>
+        
+                        <p>Though a small Real Estate office, Southern Key decided mortage flex systems was the solution to their immediate need.</p>
+        
+                        <a href="case-study-details.html" class="btn circle hover-solid blue uppercase">
+                            <span>View Case</span>
+                        </a>
+        
+                    </div>
+                    <div class="ht-cta-content text-white quote col-5">
+                        <blockquote>The system does an amazing job at providing the tools we needed to get ahead!  Couldn't recommend it more.</blockquote>
+                    </div>
+                    <!-- CTA Content End 
+        
+                </div>
+            </div>
+        </div> -->
+        <!-- CTA Section End -->
+        {% include "app/templates/partials/_end.njk" %}
+    
+{% endblock %}
+    

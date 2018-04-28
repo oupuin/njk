@@ -1,0 +1,28 @@
+{% macro c01( title, desc, url, btn_txt, image_url, image_alt, order ) %}
+
+
+<!-- CTA Section Start -->
+<div class="ht-cta-section section pt-120 pb-120" data-overlay="{% if theme_name == 'purple' %}{{ theme_name | lower }}{%else%}cyan-blue{%endif%}" data-opacity="8" style="background-image: url(./images/bg/busi-cta.jpg)">
+    <div class="container">
+        <div class="row">
+
+            <!-- CTA Content Start -->
+            <div class="ht-cta-content text-white text-center col-12">
+
+                <h5 class="title">{{title}}</h5>
+
+                <p>{{desc}}</p>
+
+                <a href="contact.html" class="btn {% if theme_name == 'purple' %}btn-border{%endif%} circle hover-solid {% if theme_name == 'purple' %}orange{%else%}blue{% endif %} uppercase">
+                    <span>contact us</span>
+                </a>
+
+            </div>
+            <!-- CTA Content End -->
+
+        </div>
+    </div>
+</div>
+<!-- CTA Section End -->
+
+{% endmacro %}

@@ -1,0 +1,190 @@
+{% set page_name = "Support" %}
+
+{% extends "./app/templates/_layout.njk" %}
+
+{% import "app/templates/partials/_section-hero.njk" as hero %}
+{% import "app/templates/partials/_section-feature.njk" as feat %}
+{% import "app/templates/partials/_section-cta.njk" as cta %}
+
+    {% block content %}
+
+        {% include "app/templates/partials/_section-header.njk" %}
+
+        <!-- Hero Section Start -->
+        <div class="ht-hero-section section">
+
+            <!-- Hero One Slider Start -->
+            <div class="ht-hero-slider mflex-slider">
+
+                <!-- Single Slide Start -->
+                <div class="ht-single-slide mflex-slide small" style="background-image: url(https://d29u17ylf1ylz9.cloudfront.net/hasbuz/assets/images/bg/busi-page-banner.jpg)">
+
+                    <!-- Hero Content One Start -->
+                    <div class="ht-hero-content-four container slide">
+
+                        <h1 class="cssanimation sequence flipY title">Support</h1>
+                        <!-- <ol class="ht-breadcrumb-two breadcrumbs">
+                            <li><a href="team.html">team</a></li>
+                            <li class="active"><a href="team-details.html">Dave Lee</a></li>
+                        </ol> -->
+                        <br>
+                        <!-- <p>Get the consultation and information you need on mortgaging!</p> -->
+
+                    </div>
+                    <!-- Hero Content One End -->
+                </div>
+                <!-- Single Slide End -->
+
+            </div>
+            <!-- Hero One Slider End -->
+
+
+        </div>
+        <!-- Hero Section End -->
+
+
+        <!-- Blog Section Start -->
+        <div class="ht-blog-section section pt-40 pb-70">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-12 col-12 mb-40">
+                        <ol class="ht-breadcrumb-two breadcrumbs left">
+                        <li>
+                            <a href="services.html">services</a>
+                        </li>
+                        <li class="active">
+                            <a href="support.html">support</a>
+                        </li>
+                        </ol>
+                    
+                    </div>
+
+                    <div class="col-lg-8 col-12 mb-50">
+
+                        <!-- Blog One Start -->
+                        <div class="ht-blog-three-details">
+                            
+                            <!-- Title -->
+                            <h2 class="title">MortgageFlex Support</h2>
+                            <!-- Meta -->
+                            <!-- <div class="meta fix">
+                                <a href="#" class="meta-item author">By Joy Dowling</a>
+                                <span class="meta-item date">June 01, 2018</span>
+                            </div> -->
+                            <br>
+                            
+
+                            <!-- Image -->
+                            <div class="image">
+                                <img src="http://placehold.it/770x380" alt="Support">
+                            </div>
+
+                            <!-- Content -->
+                            <div class="content">
+
+
+                                <!-- Description -->
+                                <div class="desc">
+                                    <p>Direct client support is a major part of the MortgageFlex Systems experience. Whether at the beginning stages of an implementation, or already live, you will receive support from a single request.  Our goal is to acknowledge all requests immediately and then we work with the customer to prioritize the request and correct the problem.  We provide a LIVE person to talk with - you don't have to wait 24 hours or so for a callback. We're here to help!</p>
+                                    <p>The technical support staff is made up of a diverse group of people each with a unique skill set.  The technical services department consists of Microsoft Certified Professionals, Citrix Certified Administrators, and Network Engineers with over 25 years of experience planning, developing, implementing, maintaining, and managing data center environments, physical and virtual infrastructures.  Technical services management has advanced degrees in information technology, business administration, and project management to offer the customer an unequaled support experience.</p>
+                                    <ul class="list">
+                                        <li>Phone Support - 8:00 A.M. - 5:00 P.M. (EST)</li>
+                                        <li>Programming Support - 8:00 A.M. - 7:00 P.M. (M-Th), 8:00 A.M. - 5:00 P.M. (F)</li>
+                                        <li>24X7 hosted support - hosted support never closes</li>
+                                        <li>LinkedIn customer groups that allow customers to exchange ideas</li>
+                                        <li>Secure customer web-site for case submission</li>
+                                    </ul>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                        <!-- Blog One End -->
+
+                       
+
+                    </div>
+
+                    <div class="col-lg-4 col-12">
+
+                        <div class="ht-sidebar-three-wrap">
+                                                               
+
+                            <!-- Sidebar One Social -->
+                            <div class="ht-sidebar-three">
+                                <h4 class="sidebar-title">Page Sections</h4>
+                                <ul class="ht-sidebar-three-link">
+                                    <li>
+                                        <a href="#one">
+                                            <i class="fa fa-info-circle"></i>
+                                            Section One
+                                            <!-- <span>Dave's Facebook</span> -->
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#two">
+                                            <i class="fa fa-info-circle"></i>
+                                            Section Two
+                                            <!-- <span>( 07 )</span> -->
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#three">
+                                            <i class="fa fa-info-circle"></i>
+                                            Section Three
+                                            <!-- <span>( 10 )</span> -->
+                                        </a>
+                                    </li>
+                            
+                                </ul>
+                            </div>
+                            <!-- Sidebar One Social -->
+
+                            <!-- Sidebar One Post -->
+                            <div class="ht-sidebar-three">
+                             {% include "app/templates/partials/_contact-cta.njk" %}    
+                             
+                            </div>
+                            <!-- Sidebar One Post End -->
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Blog Section End -->
+
+        <!-- CTA Section Start -->
+        <!-- <div class="ht-cta-section section pt-120 pb-120" data-overlay="cyan-blue" data-opacity="8" style="background-image: url(./images/bg/busi-cta.jpg)">
+            <div class="container">
+                <div class="row">
+        
+                    
+                    <div class="ht-cta-content text-white col-8">
+        
+                        <h2 class="title">Case Study - ReMax</h2>
+        
+                        <p>A long-time player in Real Estate, ReMax chose mortage flex systems for their new cloud implementatons.</p>
+        
+                        <a href="contact.html" class="btn circle hover-solid blue uppercase">
+                            <span>contact us</span>
+                        </a>
+        
+                    </div>
+                    <div class="ht-cta-content text-white quote col-3 offset-1">
+                        <blockquote>Mortgage Flex Ones' workflow has completely changed the way we operate within our teams. It's the perfect
+                            tool for advanced mortgaging!</blockquote>
+                    </div>
+                    
+        
+                </div>
+            </div>
+        </div> -->
+        <!-- CTA Section End -->
+        {% include "app/templates/partials/_end.njk" %}
+    
+{% endblock %}
+    

@@ -18,6 +18,7 @@ module.exports = function () {
         sassCssDest: dev + 'css',
 
         allDevHtml: dev + '**/*.html',
+        allDevNJK: dev + '**/*.njk',
 
         allDevImages: dev + 'images/**/*.+(png|jpg|gif|svg)',
         buildImagesDest: build + 'images',

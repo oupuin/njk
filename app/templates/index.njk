@@ -1,0 +1,71 @@
+{% set page_name = "Home" %}
+
+{% extends "./app/templates/_layout.njk" %}
+
+{% if theme_name == 'purple' %}
+    {% import "app/templates/partials/_section-hero.left.njk" as hero %}
+{% else %}
+    {% import "app/templates/partials/_section-hero.njk" as hero %}
+{% endif %}
+
+{% import "app/templates/partials/_section-feature.njk" as feat %}
+{% import "app/templates/partials/_section-cta.njk" as cta %}
+
+    {% block content %}
+
+    
+        {% include "app/templates/partials/_section-header.njk" %}
+        {{ hero.video(
+            'Simplify Your Lending',
+            'MortgageFlexONE Origination uses the same database for Consumer and Mortgage loans - giving you immediate access to existing
+            borrower information, when you need it.',
+            'large', 
+            './video/20860871.mp4'
+        )
+
+        }}
+
+        {{ feat.f01(
+            "<span class='tinycase'>Your Cloud Mortaging System</span><br>MortgageFlex<span class='bold'>ONE</span>",
+            "MortgageFlexONE is an enterprise-level loan origination system that offers the functionality you need regardless of the size
+            of your business.",
+            "mfxone.html", 
+            "Find Out More",
+            "http://placehold.it/361x423",
+            "Feature"
+        )
+
+        }}
+        
+        {{ feat.f01(
+            "Our Services",
+            "We are here to help your loan process run as smoothly as possible. Our experienced staff ensures that you succeed while providing
+            a safe and secure system.",
+            "services.html", 
+            "Find Out More",
+            "http://placehold.it/361x423",
+            "Feature",
+            "order-2"
+        )
+
+        }}
+        
+        {{ cta.c01(
+            "Wanna Talk To Us?",
+            "We're here to help you. Every step of the way.",
+            "contact.html'",
+            "Contact Us",
+            "http://placehold.it/361x423",
+            "Feature",
+            "order-2"
+        )
+
+        }}
+    
+
+        {% include "app/templates/partials/_section-clients.njk" %}
+        {% include "app/templates/partials/_section-latestblogs.njk" %}
+        {% include "app/templates/partials/_end.njk" %}
+    
+{% endblock %}
+    

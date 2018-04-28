@@ -4,9 +4,11 @@
     var gulp = require('gulp');
     var args = require('yargs').argv;
     var config = require('./gulp.config')();
-    var inputTemplates = './app/templates/*.html';
+    var allTemplates = './app/templates/*.njk';
+    var inputTemplates = './app/templates/!(_)*.njk';
     var browserSync = require('browser-sync').create();
     var nunjucksRender = require('gulp-nunjucks-render');
+    // var data = require('gulp-data');
     var del = require('del');
     var runSequence = require('run-sequence');
     var $ = require('gulp-load-plugins')({
@@ -49,10 +51,43 @@
             }));
     });
 
-    gulp.task('watch', ['browserSync', 'sass'], function () {
+    // -----------------------------------------------------------------------------
+    // Templating
+    // -----------------------------------------------------------------------------
+
+    gulp.task('njk-all', function () {
+        nunjucksRender.nunjucks.configure(['./app/templates/']);
+        // Gets .html and .nunjucks files in pages        
+        return gulp.src(allTemplates)
+        // Renders template with nunjucks
+        .pipe(nunjucksRender({
+            data: {
+                theme_name: 'purple'
+            }
+        }));
+
+    });
+
+    gulp.task('njk', function () {
+        nunjucksRender.nunjucks.configure(['./app/templates/']);
+        // Gets .html and .nunjucks files in pages        
+        return gulp.src(inputTemplates)
+        // Renders template with nunjucks
+        .pipe(nunjucksRender({
+            data: {
+                theme_name: 'purple'
+            }
+        }))
+        // output files in dist folder
+        .pipe(gulp.dest('./app/'));
+    });
+    
+    gulp.task('watch', ['browserSync', 'sass', 'njk-all', 'njk'], function () {
         log('Watch for file changes...');
 
         gulp.watch(config.allDevSass, ['sass']);
+        gulp.watch(config.allDevNJK, ['njk-all']);
+        gulp.watch(config.allDevNJK, ['njk']);
         gulp.watch(config.allDevHtml, browserSync.reload);
         gulp.watch(config.allDevJS, browserSync.reload);
     });
@@ -66,21 +101,6 @@
             }
         });
     });
-
-    // -----------------------------------------------------------------------------
-    // Templating
-    // -----------------------------------------------------------------------------
-
-    gulp.task('nunjucks', function () {
-        nunjucksRender.nunjucks.configure(['./app/templates/']);
-        // Gets .html and .nunjucks files in pages
-        return gulp.src(inputTemplates)
-            // Renders template with nunjucks
-            .pipe(nunjucksRender())
-            // output files in dist folder
-            .pipe(gulp.dest('./app/'));
-    });
-
 
     gulp.task('optimize', ['sass'], function () {
         return gulp
@@ -120,7 +140,7 @@
     });
 
     gulp.task('clean:dist', function () {
-        // return del.sync('dist');
+        return del.sync('dist');
     });
 
     gulp.task('cache:clear', function (callback) {
@@ -130,11 +150,11 @@
     gulp.task('build', function (callback) {
         log("Building project...");
 
-        runSequence('vet:js', 'clean:dist', 'nunjucks', ['optimize', 'images', 'fonts'], callback);
+        runSequence('vet:js', 'clean:dist', 'njk-all', 'njk', ['optimize', 'images', 'fonts'], callback);
     });
 
     gulp.task('default', function (callback) {
-        runSequence(['sass', 'nunjucks', 'browserSync', 'watch'], callback);
+        runSequence(['sass', 'njk-all', 'njk', 'browserSync', 'watch'], callback);
     });
 
     /////////

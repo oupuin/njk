@@ -1,0 +1,213 @@
+{% set page_name = "Home" %}
+
+{% extends "./app/templates/_layout.njk" %}
+
+{% import "app/templates/partials/_section-hero.njk" as hero %}
+{% import "app/templates/partials/_section-feature.njk" as feat %}
+{% import "app/templates/partials/_section-cta.njk" as cta %}
+
+    {% block content %}
+
+    
+        {% include "app/templates/partials/_section-header.njk" %}
+
+        <!-- Hero Section Start -->
+        <div class="ht-hero-section section">
+        
+            <!-- Hero One Slider Start -->
+            <div class="ht-hero-slider mflex-slider">
+        
+                <!-- Single Slide Start -->
+                <div class="ht-single-slide mflex-slide medium" style="background-image: url(./video/12211810.mp4)">
+        
+                    <!-- Hero Content One Start -->
+                    <div class="ht-hero-content-four container slide">
+        
+                        <h1 class="cssanimation leDoorCloseLeft sequence">About Us</h1>
+                                
+                    </div>
+                    <!-- Hero Content One End -->
+                    <video id="introvid" src="./video/12211810.mp4"></video>
+                </div>
+                <!-- Single Slide End -->
+        
+            </div>
+            <!-- Hero One Slider End -->
+        
+            <!-- <a href="#section-01" class="btn btn-lg hover-solid circle blue uppercase bot-scroll">
+                        <span><i class="fa fa-chevron-down"></i></span>
+                    </a> -->
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- Theme Feature Section Start -->
+        <div class="ht-theme-feature-section section pt-40 pb-90">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <!-- <div class="col-lg-12 col-12 mb-80">
+                        <ol class="ht-breadcrumb-two breadcrumbs left">
+                            <li>
+                                <a href="about.html">About Us</a>
+                            </li>
+                            <li class="active">
+                                <a href="team.html">Team</a>
+                            </li>
+                        </ol>
+                    
+                    </div> -->
+
+                    <div class="ht-theme-feature-image text-center col-md-6 col-12 mb-30">
+                        <img src="images/busi-theme-feature-1.png" alt="Feature">
+                    </div>
+
+                    <div class="ht-theme-feature-content col-md-6 col-12 mb-30">
+
+                        <!-- Section Title Three Start -->
+                        <div class="ht-section-title-three text-left col-12 p-0 mb-25">
+
+                            <h4>who we are</h4>
+                            <h2>Our Story</h2>
+
+                        </div>
+                        <!-- Section Title Three End -->
+
+                        <p>MortgageFlex Systems was founded in 1980 for one reason - to simplify mortgage lending. After 36 years, we're still focused on the mortgage industry and dedicated to providing lenders with smart software solutions.</p>
+                        <p>To accomplish our mission, our team is comprised of mortgage and software development experts. Most of our staff has well over ten years of experience, with many edging to the twenty year mark. We cultivate a strong cross-learning culture with shared responsibilities and we're dedicated to our customer's success.</p>
+                        <a href="contact.html" class="btn hover-solid blue uppercase circle">
+                            <span>contact us</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Theme Feature Section End -->
+
+        <!-- Feature Section Start -->
+        <div class="ht-feature-section section bg-cyan-blue pt-120 pb-90">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Feature -->
+                    <div class="ht-feature-one white text-center col-md-4 col-12 mb-30">
+                        <div class="icon">
+                            <i class="icon-mobile"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Here For the Long-Haul</h4>
+                            <p>You will always be in constant contact with your sales representative as long as you are a customer.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="ht-feature-one white text-center col-md-4 col-12 mb-30">
+                        <div class="icon">
+                            <i class="icon-beaker"></i>
+                        </div>
+                        <div class="content">
+                            <h4>Growth Driven</h4>
+                            <p>Our job is to know you and your challenges, not only today but also in the future.</p>
+                        </div>
+                    </div>
+
+                    <!-- Feature -->
+                    <div class="ht-feature-one white text-center col-md-4 col-12 mb-30">
+                        <div class="icon">
+                            <i class="icon-cloud"></i>
+                        </div>
+                        <div class="content">
+                            <h4>In It Together</h4>
+                            <p>We view our customers as partners and not just another sale.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Feature Section End -->
+
+        <!-- About Video Section Start -->
+        <div class="ht-about-video-section section pt-120 pb-120">
+            <div class="container">
+                <div class="row">
+
+                    <!-- About Video Start -->
+                    <div class="ht-about-video-one text-center col-xl-9 col-lg-10 col-12 ml-auto mr-auto">
+
+                        <h2>We provide high quality and cost effective services</h2>
+                        <p>Headquartered in Jacksonville, Florida our knowledgeable and experienced team offers you the most cost effective enterprise-level solutions in the market today.</p>
+
+                        <div class="">
+                            <img src="images/about/busi-2.jpg" alt="About Business">
+                        </div>
+
+                    </div>
+                    <!-- About Video End -->
+
+                </div>
+            </div>
+        </div>
+        <!-- About Video Section End -->
+
+        <!-- FunFact Section Start -->
+        <div class="ht-funfact-section section pt-120 pb-90" data-overlay="cyan-blue" data-opacity="8" style="background-image: url(./images/bg/busi-funfact.jpg)">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-sm-6 mb-30">
+                        <div class="ht-funfact-one">
+                            <div class="icon">
+                                <i class="icon-profile-male"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="counter">90</h2>
+                                <p>Happy Clients</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-30">
+                        <div class="ht-funfact-one">
+                            <div class="icon">
+                                <i class="icon-trophy"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="counter">85</h2>
+                                <p>Award Winning</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-30">
+                        <div class="ht-funfact-one">
+                            <div class="icon">
+                                <i class="icon-browser"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="counter">230</h2>
+                                <p>All Project</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 mb-30">
+                        <div class="ht-funfact-one">
+                            <div class="icon">
+                                <i class="icon-wine"></i>
+                            </div>
+                            <div class="content">
+                                <h2 class="counter">350</h2>
+                                <p>Cups of Coffee</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- FunFact Section Start -->
+        {% include "app/templates/partials/_end.njk" %}
+    
+{% endblock %}
+    

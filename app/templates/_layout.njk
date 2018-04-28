@@ -1,15 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+{% set twp = "Blog, News, Detail" %}
+{# {% import "app/templates/_globals.njk" as global %} #}
 
-{% include "./app/templates/partials/_header.njk" %}
+{% include "app/templates/partials/_head.njk" %}
 
 <body>
     <!-- Main Wrapper Start -->
-    <div class="main-wrapper">
-        {% include "./app/templates/partials/_menu.njk" %} 
-        {% block content %} {% endblock %} 
-        {% include "./app/templates/partials/_end.njk"%}
+    <div class="main-wrapper {{ page_name | lower }} {{ theme_name | lower }}">
+
+        {% block content %}
+        {% endblock %}
+    
     </div>
+    <!-- Main Wrapper End -->
+
+    <!-- JS
+    ============================================ -->
+    
+    <!-- jQuery JS -->
+    <script src="./js/vendor/jquery-1.12.0.min.js"></script>
+    
+    <!-- Mustache JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    
+    <!-- Menu JS -->
+    <script src="./js/menu.js"></script>
+    
+    <!-- Popper JS -->
+    <script src="./js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="./js/bootstrap.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="./js/plugins.js"></script>
+    
+    <!-- Ajax Mail -->
+    <script src="./js/ajax-mail.js"></script>
+    
+    <!-- Main JS -->
+    <script src="./js/main.js"></script>
+    
+{% if page_name == "Home" or page_name == "Services" %}
+    <script> 
+        document.getElementById('introvid').play(); 
+    </script>
+{% endif %}
+
+{% if page_name == "Contact" %}
+    <!-- Google Map Api -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAlZPf84AAVt8_FFN7rwQY5nPgB02SlTKs"></script>
+    <!-- BW Script Not Active Yet <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfHKeKY2l7ox3eIQPNuj1JiBHKeuEQPno"></script> -->
+    <!-- Google Map Activation -->
+    <script src="map/map.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77619903-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-77619903-1');
+    </script>
+{% endif %}
+
+{% if "Blog" or "News" or "Details" in page_name %}
+    {% include "app/templates/partials/_twitter.js.njk" %}    
+{% endif %}
+
 </body>
 
 </html>

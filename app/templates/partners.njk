@@ -1,0 +1,574 @@
+{% set page_name = "Partners" %}
+
+{% extends "./app/templates/_layout.njk" %}
+
+{% import "app/templates/partials/_section-hero.njk" as hero %}
+{% import "app/templates/partials/_section-feature.njk" as feat %}
+{% import "app/templates/partials/_section-cta.njk" as cta %}
+
+    {% block content %}
+
+        {% include "app/templates/partials/_section-header.njk" %}
+
+    <!-- Hero Section Start -->
+    <div class="ht-hero-section section">
+    
+        <!-- Hero One Slider Start -->
+        <div class="ht-hero-slider mflex-slider">
+    
+            <!-- Single Slide Start -->
+            <div class="ht-single-slide mflex-slide small" style="background-image: url(./video/20860871.mp4)">
+    
+                <!-- Hero Content One Start -->
+                <div class="ht-hero-content-four container slide">
+    
+                    <h1 class="cssanimation sequence flipY">Our Partners</h1>
+                    <!-- <ol class="ht-breadcrumb-two">
+                                <li class="active">In The Know</li>
+                            </ol> -->
+                    <br>
+                    <p>Our partners are our backbone, and we've enjoyed every step of the journey with them.</p>
+    
+                </div>
+                <!-- Hero Content One End -->
+                <video id="introvid" src="./video/20860871.mp4" loop autoplay></video>
+            </div>
+            <!-- Single Slide End -->
+    
+        </div>
+        <!-- Hero One Slider End -->
+    
+    
+    </div>
+    <!-- Hero Section End -->
+
+        <!-- Portfolio Section Start -->
+        <div class="ht-portfolio-section section pt-40 pb-90">
+            <div class="ht-portfolio-wrap-one">
+
+                <div class="container">
+                <div class="row">
+
+                    <div class="col-12 mb-40">
+                        <ol class="ht-breadcrumb-two breadcrumbs left">
+                            <li>
+                                <a href="about.html">about Us</a>
+                            </li>
+                            <li class="active">
+                                <a href="partners.html">Partners</a>
+                            </li>
+                        </ol>
+                    
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.mortgageaccounting.com/" class="image">
+                                <img src="images/partners/001.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.mortgageaccounting.com/">Advantage Systems - Accounting for Mortgage Brokers (AMB)</a>
+                                </h4>
+                                <span>Accounting</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://mi.archcapgroup.com/" class="image">
+                                <img src="images/partners/002.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://mi.archcapgroup.com/">Arch MI</a>
+                                </h4>
+                                <span>Mortgage Insurance</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://azimuthgrc.com/" class="image">
+                                <img src="images/partners/003.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://azimuthgrc.com/">Azimuth</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://azure.microsoft.com/en-us/" class="image">
+                                <img src="images/partners/004.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://azure.microsoft.com/en-us/">Azure</a>
+                                </h4>
+                                <span>MortgageFlex Partner </span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.bkfs.com/Products/Mortgage/Servicing/Pages/default.aspx" class="image">
+                                <img src="images/partners/005.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.bkfs.com/Products/Mortgage/Servicing/Pages/default.aspx">Black Knight</a>
+                                </h4>
+                                <span>Servicing</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.cbcinnovis.com/solutions-verification.html" class="image">
+                                <img src="images/partners/006.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.cbcinnovis.com/solutions-verification.html">CBC Innovis</a>
+                                </h4>
+                                <span>Credit</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.ccmcinc.com/" class="image">
+                                <img src="images/partners/007.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.ccmcinc.com/">CCMC Bridge</a>
+                                </h4>
+                                <span>Middleware</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.docmagic.com/" class="image">
+                                <img src="images/partners/008.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.docmagic.com/">DocMagic</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 2 -->
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.dovenmuehle.com/" class="image">
+                                <img src="images/partners/009.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.dovenmuehle.com/">Dovenmuehle Mortgage</a>
+                                </h4>
+                                <span>Servicing</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.essent.us/" class="image">
+                                <img src="images/partners/010.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="#">Essent</a>
+                                </h4>
+                                <span>Mortgage Insurance</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.fics.com/products/mortgage-servicer/" class="image">
+                                <img src="images/partners/011.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.fics.com/products/mortgage-servicer/">Financial Industry Computer Systems (FICS)</a>
+                                </h4>
+                                <span>Servicing</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.firstam.com/title/index.html" class="image">
+                                <img src="images/partners/012.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.firstam.com/title/index.html">First American</a>
+                                </h4>
+                                <span>Title</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.globaldms.com/" class="image">
+                                <img src="images/partners/013.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.globaldms.com/">Global DMS</a>
+                                </h4>
+                                <span>Appraisal</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://info.idsdoc.com/" class="image">
+                                <img src="images/partners/014.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://info.idsdoc.com/">IDS</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://lenderscompliancegroup.com/" class="image">
+                                <img src="images/partners/015.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://lenderscompliancegroup.com/">Lenders Compliance Group</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.mgic.com/" class="image">
+                                <img src="images/partners/016.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.mgic.com/">Mortgage Guaranty Insurance Corporation (MGIC)</a>
+                                </h4>
+                                <span>Mortgage Insurance</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- 3 -->
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.mrgdocs.com/" class="image">
+                                <img src="images/partners/017.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.mrgdocs.com/">Mortgage Resources Group</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.onbase.com/" class="image">
+                                <img src="images/partners/018.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.onbase.com/">OnBase</a>
+                                </h4>
+                                <span>Image Management</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://plaid.com" class="image">
+                                <img src="images/partners/019.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://plaid.com">Plaid</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.questsoft.com/" class="image">
+                                <img src="images/partners/020.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.questsoft.com/">QuestSoft</a>
+                                </h4>
+                                <span>Compliance</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.servicelinknationalflood.com/" class="image">
+                                <img src="images/partners/021.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.servicelinknationalflood.com/">ServiceLink</a>
+                                </h4>
+                                <span>Flood</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://corp.sharperlending.com/credit-reporting" class="image">
+                                <img src="images/partners/022.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://corp.sharperlending.com/credit-reporting">Sharper Lending</a>
+                                </h4>
+                                <span>Credit</span>
+                            </div>
+                        </div>
+                    
+                    </div> 
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.consumerfinance.gov/" class="image">
+                                <img src="images/partners/023.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.consumerfinance.gov/">CFPB</a>
+                                </h4>
+                                <span>Financing</span>
+                            </div>
+                        </div>
+                    
+                    </div> 
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.fanniemae.com/" class="image">
+                                <img src="images/partners/024.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.fanniemae.com/">Fannie Mae</a>
+                                </h4>
+                                <span>Financing</span>
+                            </div>
+                        </div>
+                    
+                    </div> 
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.ffiec.gov/" class="image">
+                                <img src="images/partners/025.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.ffiec.gov/">FFIEC</a>
+                                </h4>
+                                <span>Financing</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.freddiemac.com/" class="image">
+                                <img src="images/partners/026.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.freddiemac.com/">Freddie Mac</a>
+                                </h4>
+                                <span>Financing</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.ginniemae.gov/" class="image">
+                                <img src="images/partners/027.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.ginniemae.gov/">Ginnie Mae</a>
+                                </h4>
+                                <span>Financing</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.hud.gov/" class="image">
+                                <img src="images/partners/028.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.hud.gov/">U.S. Department of Housing and Urban Development
+</a>
+                                </h4>
+                                <span>Credit</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="http://www.mismo.org/" class="image">
+                                <img src="images/partners/029.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="http://www.mismo.org/">Mismo</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.mba.org/" class="image">
+                                <img src="images/partners/030.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.mba.org/">Mortage Bankers Association</a>
+                                </h4>
+                                <span>Credit</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-12 mb-30">
+                    
+                        <div class="ht-portfolio-one ht-portfolio-one-small ht-portfolio-three">
+                            <a target="_blank" href="https://www.mersinc.org/" class="image">
+                                <img src="images/partners/031.png" alt="Portfolio Image">
+                            </a>
+                            <div class="content">
+                                <h4 class="title">
+                                    <a target="_blank" href="https://www.mersinc.org/">MERS</a>
+                                </h4>
+                                <span>MortgageFlex Partner</span>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <!-- 3 -->
+
+                </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Portfolio Section End -->
+         {% include "app/templates/partials/_end.njk" %}
+    
+{% endblock %}
+    

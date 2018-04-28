@@ -1,7 +1,8 @@
 <head>
+    {% set site_name = "MortgageFlex" %}
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Mortgage Flex - Home</title>
+    <title>{{site_name}} - {{page_name}}</title>
     <meta name="description" content="MortgageFlexONE is the answer to all of your lending woes.  Our software uses the same database for Consumer and Mortgage loans - giving you immediate access to existing
     borrower information, when you need it.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,7 +13,7 @@
     ============================================ -->
 
     <link rel="canonical" href="https://mortageflex.com/" />
-    <meta property="og:site_name" content="MortgageFlex" />
+    <meta property="og:site_name" content="{{site_name}}" />
     <meta property="og:title" content="Home" />
     <meta property="og:image" content="https://img.youtube.com/vi/x4ynu5hid3/maxresdefault.jpg" />
     <meta property="og:image" content=".jpg" />
@@ -20,7 +21,7 @@
     <!--<meta property="og:type" content="article" />-->
     <!-- Facebook -->
     <meta property="article:publisher" content="https://www.facebook.com/MortgageFlexSystems" />
-    <meta property="article:author" content="MortgageFlex" />
+    <meta property="article:author" content="{{site_name}}" />
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@MortgageFlexUS" />

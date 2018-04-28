@@ -1,0 +1,37 @@
+
+{% macro video( title, desc, herosize, video_url, image_url, image_alt ) %}
+
+
+<!-- Hero Section Start -->
+<div class="ht-hero-section section">
+
+    <!-- Hero One Slider Start -->
+    <div class="ht-hero-slider mflex-slider">
+
+        <!-- Single Slide Start -->
+        <div class="ht-single-slide mflex-slide {{herosize}}" style="background-image: url({{video_url}})">
+
+            <!-- Hero Content One Start -->
+            <div class="ht-hero-content-four container slide">
+
+                <h1 class="cssanimation leDoorCloseLeft sequence">{{title}}</h1>
+                <p>{{ desc }}</p>
+
+            </div>
+            <!-- Hero Content One End -->
+            <video id="introvid" src="{{video_url}}" loop autoplay></video>
+        </div>
+        <!-- Single Slide End -->
+
+    </div>
+    <!-- Hero One Slider End -->
+
+    <a href="#section-01" class="btn btn-lg hover-solid circle blue uppercase bot-scroll">
+        <span>
+            <i class="fa fa-chevron-down"></i>
+        </span>
+    </a>
+</div>
+<!-- Hero Section End -->
+
+{% endmacro %}

@@ -1,0 +1,143 @@
+{% set page_name = "Special Discount Offer" %}
+
+{% extends "./app/templates/_layout.njk" %}
+
+{% import "app/templates/partials/_section-hero.njk" as hero %}
+{% import "app/templates/partials/_section-feature.njk" as feat %}
+{% import "app/templates/partials/_section-cta.njk" as cta %}
+
+    {% block content %}
+
+        {% include "app/templates/partials/_section-header-offers.njk" %}
+
+        <!-- Hero Section Start -->
+        <div class="ht-hero-section section">
+        
+            <!-- Hero One Slider Start -->
+            <div class="ht-hero-slider mflex-slider">
+        
+                <!-- Single Slide Start -->
+                <div class="ht-single-slide mflex-slide small" style="background-image: url(./video/20860871.mp4)">
+        
+                    <!-- Hero Content One Start -->
+                    <div class="ht-hero-content-four container slide">
+        
+                        <h1 class="cssanimation sequence flipY">Two Months Free Special Offer</h1>
+                        <!-- <ol class="ht-breadcrumb-two">
+                            <li class="active">In The Know</li>
+                        </ol> -->
+                        <br>
+                        <p>Fill out the form to take advantage of this special discount!</p>
+        
+                    </div>
+                    <!-- Hero Content One End -->
+                    <video id="introvid" src="./video/20860871.mp4" loop autoplay></video>
+                </div>
+                <!-- Single Slide End -->
+        
+            </div>
+            <!-- Hero One Slider End -->
+        
+            
+        </div>
+        <!-- Hero Section End -->
+
+        <!-- Blog Section Start -->
+        <div class="ht-blog-section section pt-90 pb-70">
+            <div class="container">
+                <div class="row">       
+        
+                    <div class="col-lg-7 col-12 mb-50">
+        
+                        <!-- Blog One Start -->
+                        <div class="ht-blog-three-details">
+        
+                            <!-- Title -->
+                            <h1 class="title">This is a deal you can't pass up.</h1>
+                            <!-- Meta -->
+                            <!-- <div class="meta fix">
+                                        <a href="#" class="meta-item author">By Joy Dowling</a>
+                                        <span class="meta-item date">June 01, 2018</span>
+                                    </div> -->
+                            <br>
+                            <!-- Content -->
+                            <div class="content">
+        
+        
+                                <!-- Description -->
+                                <div class="desc">
+                                    <p>We're offering our premiere software, MortgageFlexONE free for 60 days.  That's 30 days longer than your typical offering. Just use the sign up form and we'll send you a code in an email giving you access to your free 60-day trial. </p>
+                                    <p>
+                                        Our implementation team will help you meet your goals, now and in the future. An experienced team - Project Manager, Business Analyst, SME, Trainer - is assigned to each customer for the life of the project.
+                                    </p>
+                                    <!-- <p>Our seasoned project managers and business analysts, each averaging more than a decade of industry experience, are ready
+                                    to help guide your implementation to completion. We’ll review your processes, set up your new system, and focus on your needs
+                                    throughout the process. 
+                                    </p>
+                                    <p>
+                                    We take the time to understand your vision for the future from the start. Our entire solution is
+                                    designed to meet your needs, so we’ll document your objectives from day one and give you the technology necessary to ensure
+                                    they’re met when your implementation is complete. Each Implementation is customized based on the customer’s business process,
+                                    their requirements of the application for their specific business and time constraints, among other considerations. 
+                                    </p> -->
+                                    <p>
+                                    Sessions are conducted to determine the configurations that will be completed to accommodate the business requirements. Our project
+                                    managers design a customized approach and add the necessary expertise to your own staff to ensure the entire approach is
+                                    as organized as possible.</p>
+        
+                                </div>
+        
+                            </div>
+        
+                        </div>
+                        <!-- Blog One End -->
+        
+        
+        
+                    </div>
+        
+                    <div class="col-lg-4 offset-lg-1 col-12">
+        
+                        <div class="ht-sidebar-three-wrap">
+                            
+                            <!-- Comment Form Wrap Start -->
+                            <div class="mfx form">
+                                <h5 class="mb-40">Fill out your form, and get your free access today!</h5>
+                            
+                                <!-- Comment Form Start -->
+                                <div class="ht-comment-form-one mb-20">
+                                    <form name="offer" action="#">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <input type="text" id="name" placeholder="Name">
+                                                <!-- <label for="name">Name</label> -->
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="email" id="email" placeholder="Email">
+                                                <!-- <label for="email">Email</label> -->
+                                            </div>
+                                            <div class="col-12">
+                                                <textarea id="message" placeholder="Message"></textarea>
+                                                <!-- <label for="message">Message</label> -->
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="submit" value="Send My Code Now">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <!-- Comment Form End -->
+                           </div>
+        
+                        </div>
+        
+                    </div>
+        
+                </div>
+            </div>
+        </div>
+        <!-- Blog Section End -->
+        {% include "app/templates/partials/_end-offers.njk" %}
+    
+{% endblock %}
+    

@@ -1,0 +1,28 @@
+{% macro c01( title, desc, url, btn_txt, image_url, image_alt, order ) %}
+
+
+<!-- CTA Section Start -->
+<div class="ht-cta-section section pt-120 pb-120" data-overlay="purple" data-opacity="0">
+    <div class="container">
+        <div class="row">
+
+            <!-- CTA Content Start -->
+            <div class="ht-cta-content text-white text-center col-12">
+
+                <h5 class="title">{{title}}</h5>
+
+                <p>{{desc}}</p>
+
+                <a href="contact.html" class="btn btn-border circle hover-solid orange uppercase">
+                    <span>contact us</span>
+                </a>
+
+            </div>
+            <!-- CTA Content End -->
+
+        </div>
+    </div>
+</div>
+<!-- CTA Section End -->
+
+{% endmacro %}
